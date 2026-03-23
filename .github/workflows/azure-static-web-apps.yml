@@ -36,7 +36,7 @@ jobs:
 
       # [2] Storage Account 배포 (보안 키를 사용한 즉시 반영)
       - name: Deploy to Azure Storage
-        uses: azure/CLI@v1
+        uses: azure/CLI@v2
         with:
           inlineScript: |
             az storage blob upload-batch -s ./ -d '$web' --account-name snowyoung --auth-mode key --overwrite true --account-key ${{ secrets.AZURE_STORAGE_KEY }}
