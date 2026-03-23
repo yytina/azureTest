@@ -40,3 +40,6 @@ jobs:
         with:
           inlineScript: |
             az storage blob upload-batch -s ./ -d '$web' --account-name snowyoung --auth-mode key --overwrite true --account-key ${{ secrets.AZURE_STORAGE_KEY }}
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
