@@ -1,0 +1,42 @@
+/* 전체 화면 기본 스타일 */
+body {
+    margin: 0;                     /* 기본 여백 제거 */
+    font-family: Arial, sans-serif; /* 기본 폰트 설정 */
+    background-color: #f4f6f9;      /* 배경색 */
+    display: flex;                  /* 가운데 정렬을 위한 flex */
+    justify-content: center;        /* 가로 가운데 */
+    align-items: center;            /* 세로 가운데 */
+    height: 100vh;                  /* 전체 화면 높이 */
+}
+
+/* 메인 박스 */
+.container {
+    background: white;              /* 흰색 배경 */
+    padding: 40px;                  /* 내부 여백 */
+    border-radius: 12px;            /* 둥근 모서리 */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* 그림자 */
+    text-align: center;             /* 텍스트 가운데 정렬 */
+}
+
+/* 제목 스타일 */
+h1 {
+    color: #2563eb;                 /* 파란색 */
+    margin-bottom: 20px;            /* 아래 여백 */
+}
+
+/* 버튼 스타일 */
+button {
+    padding: 10px 20px;             /* 내부 여백 */
+    font-size: 16px;                /* 글자 크기 */
+    border: none;                   /* 테두리 제거 */
+    border-radius: 8px;             /* 둥근 모서리 */
+    background-color: #2563eb;      /* 버튼 색상 */
+    color: white;                   /* 글자 색 */
+    cursor: pointer;                /* 마우스 포인터 */
+    transition: 0.3s;               /* 부드러운 효과 */
+}
+
+/* 버튼 호버 효과 */
+button:hover {
+    background-color: #1e40af;      /* 마우스 올렸을 때 색상 */
+}
